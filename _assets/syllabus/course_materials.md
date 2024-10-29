@@ -9,5 +9,5 @@ the [NSF/NASA Extreme Precision Radial Velocity Working Group Final Report](http
 
 Whenever practical, students are encouraged to read, comment, and ask questions via Perusall (following link from within course webpage in Canvas).  
 Therefore, students will also need a computer, modern web browser and high-speed internet access, so students can submit reading questions and comments (and perhaps effectively participate in any classes that get moved to Zoom).
-If you're traveling some weeks and find it's easier to read offline or a print version, then you may submit questions via email (with Astro 589 in subject line).
+If you're traveling some weeks and find it's easier to read offline or a print version, then you may submit questions via email (with Astro 589 in subject line; to both the instructor and the week's discussion leader).  
 
