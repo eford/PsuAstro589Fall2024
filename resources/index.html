@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="/PsuAstro589Fall2024/assets/favicon.svg">
+  <script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ["\\(", "\\)"]],
+      processEscapes: true,
+    }
+  };
+</script>
+
+<!-- This weird alignment is required by Franklin's parser. -->
+<script
+    async
+    src="/PsuAstro589Fall2024/assets/MathJax/MathJax-3.2.2/es5/tex-mml-chtml.js">
+</script>
+
+<style>
+@font-face {
+  src: url("/PsuAstro589Fall2024//assets/MathJax/MathJax-3.2.2/es5/output/chtml/fonts/woff-v2/MathJax_Main-Regular.woff">
+}
+</style>
+
+<style>
+@font-face {
+  src: url("/PsuAstro589Fall2024//assets/MathJax/MathJax-3.2.2/es5/output/chtml/fonts/woff-v2/MathJax_Zero.woff">
+}
+</style>
+
+<style>
+@font-face {
+  src: url("/PsuAstro589Fall2024//assets/MathJax/MathJax-3.2.2/es5/output/chtml/fonts/woff-v2/MathJax_Math-Italic.woff">
+}
+</style>
+
+  <link rel="stylesheet"
+  href="/PsuAstro589Fall2024/assets/Highlight/cdn-release-11.5.0/build/styles/github.min.css">
+
+<script
+  src="/PsuAstro589Fall2024/assets/Highlight/cdn-release-11.5.0/build/highlight.min.js">
+</script>
+
+<script
+  src="/PsuAstro589Fall2024/assets/Highlight/cdn-release-11.5.0/build/languages/julia.min.js">
+</script>
+
+<script
+  src="/PsuAstro589Fall2024/assets/Highlight/cdn-release-11.5.0/build/languages/julia-repl.min.js">
+</script>
+
+<script>
+  hljs.configure({tabReplace: '    '});
+  hljs.highlightAll();
+</script>
+
+    <style>
+    @font-face {
+      font-family: JuliaMono-Regular;
+      src: url("/PsuAstro589Fall2024//assets/JuliaMono/juliamono-0.044/webfonts/JuliaMono-Regular.woff2");
+    }
+    </style>
+
+  <link rel="stylesheet" href="/PsuAstro589Fall2024/css/spectre.min.css">
+  <link rel="stylesheet" href="/PsuAstro589Fall2024/css/spectre-exp.min.css">
+  <link rel="stylesheet" href="/PsuAstro589Fall2024/css/spectre-icons.min.css">
+  <link rel="stylesheet" href="/PsuAstro589Fall2024/css/spectre-overrides.css">
+  <link rel="stylesheet" href="/PsuAstro589Fall2024/css/docs.min.css">
+
+  <title>Astro 589 (Fall 2024) - Extremely Precise Radial Velocity Surveys</title>
+  <meta name="description" content="Penn State Astro 598: EPRV Surveys">
+
+
+    
+
+</head>
+<body>
+
+  <div class="docs-container off-canvas off-canvas-sidebar-show">
+  <div class="docs-navbar">
+    <a class="off-canvas-toggle btn btn-link btn-action" href="#sidebar"><i class="icon icon-menu"></i></a>
+    <div class="btns d-flex">
+
+
+      <a class="btn btn-primary ml-1" href="https://github.com/eford/PsuAstro589Fall2024">Improve this site</a>
+
+    </div>
+</div>
+
+<div id="sidebar" class="docs-sidebar off-canvas-sidebar">
+
+<div class="docs-brand">
+    <h5><a href="/PsuAstro589Fall2024/">Astro 589</a></h5>
+</div>
+
+<div class="docs-nav">
+<div class="accordion-container">
+  <ul class="menu menu-nav">
+    <div class="menu-header"><a href="/PsuAstro589Fall2024/syllabus/">Syllabus</a></div>
+    
+<!---
+    <div class="menu-header"><a href="/PsuAstro589Fall2024/lessons/">Lessons</a></div>
+    {{ispage lessons/*}}
+    {{menuitem "lessons/week1"  "Week 1"   }}
+    {{menuitem "lessons/week2"  "Week 2"    }}
+    {{menuitem "lessons/week3"  "Week 3"    }}
+    {{menuitem "lessons/week4"  "Week 4"    }}
+    {{menuitem "lessons/week5"  "Week 5"    }}
+    {{menuitem "lessons/week6"  "Week 6"    }}
+    {{menuitem "lessons/week7"  "Week 7"    }}
+
+    {{menuitem "lessons/week8"  "Week 8"    }}
+    {{menuitem "lessons/week9"  "Week 9"    }}
+    {{menuitem "lessons/week10"  "Week 10"    }}
+    {{menuitem "lessons/week11"  "Week 11"    }}
+    {{menuitem "lessons/week12"  "Week 12"    }}
+    {{menuitem "lessons/week13"  "Week 13"    }}
+    {{menuitem "lessons/week14"  "Week 14"    }}
+    {{menuitem "lessons/week15"  "Week 15"    }}
+    {{menuitem "lessons/week16"  "Week 16"    }}
+    {{end}}
+  -->
+  <div class="menu-header"><a href="/PsuAstro589Fall2024/presentations/">Presentations/Discussions</a></div>
+  <div class="menu-header"><a href="/PsuAstro589Fall2024/resources/">Resources</a></div>
+  </ul>
+</div>
+</div>
+</div>
+<a class="off-canvas-overlay" href="#close"></a>
+
+
+
+
+
+<div class="off-canvas-content">
+<div id="content" class="docs-content">
+<div class="container">
+<!-- Content appended here -->
+<div class="franklin-content">
+<h1 id="resources"><a href="#resources" class="header-anchor">Resources </a></h1>
+<h2 id="a_hrefhttpsdrivegooglecomdrivefolders1h5mfzbsmisdlx6hjudvbp72cshdfzk6tuspsharingslides_from_class_link_for_students_only"><a href="#a_hrefhttpsdrivegooglecomdrivefolders1h5mfzbsmisdlx6hjudvbp72cshdfzk6tuspsharingslides_from_class_link_for_students_only" class="header-anchor"><a href="https://drive.google.com/drive/folders/1H5mFzBSMISdLx6HjuDVBP72CShdfZk6T?usp&#61;sharing">Slides from class</a> &#40;link for students only&#41;</a></h2>
+<h2 id="interactive_notebooks"><a href="#interactive_notebooks" class="header-anchor">Interactive Notebooks </a></h2>
+<ul>
+<li><p><a href="https://eford.github.io/PsuAstro589Fall2024/notebooks/week3ccf/">CCFs</a></p>
+</li>
+<li><p><a href="https://eford.github.io/PsuAstro589Fall2024/notebooks/week3aliasing/">Periodograms &amp; Aliasing</a></p>
+</li>
+<li><p><a href="https://eford.github.io/PsuAstro589Fall2024/notebooks/week4keplerian/">Keplerian Model</a></p>
+</li>
+</ul>
+<h2 id="potential_readings"><a href="#potential_readings" class="header-anchor">Potential Readings</a></h2>
+<h3 id="overview_of_eprv"><a href="#overview_of_eprv" class="header-anchor">Overview of EPRV </a></h3>
+<ul>
+<li><p><a href="https://ui.adsabs.harvard.edu/abs/2021arXiv210714291C/abstract">Extreme Precision Radial Velocity Working Group Final Report</a> Crass et al. &#40;2021&#41;, Executive Summary</p>
+</li>
+<li><p><a href="https://ui.adsabs.harvard.edu/abs/2016PASP..128f6001F/abstract">State of the Field: Extreme Precision Radial Velocities</a></p>
+</li>
+</ul>
+<h3 id="introduction_to_eprv_observations_analysis"><a href="#introduction_to_eprv_observations_analysis" class="header-anchor">Introduction to EPRV Observations &amp; Analysis</a></h3>
+<ul>
+<li><p><a href="https://ui.adsabs.harvard.edu/abs/2023AnRSA..10..623H/abstract">Statistical Methods for Exoplanet Detection with Radial Velocities</a> Hara &amp; Ford &#40;2023&#41;</p>
+</li>
+</ul>
+<h3 id="instrumentation_wavelength_calibration"><a href="#instrumentation_wavelength_calibration" class="header-anchor">Instrumentation &amp; Wavelength Calibration</a></h3>
+<ul>
+<li><p><a href="https://ui.adsabs.harvard.edu/abs/2016SPIE.9908E..7HS/abstract">Design of NEID, an extreme precision Doppler spectrograph for WIYN</a> Schwab et al. &#40;2016&#41;</p>
+</li>
+<li><p><a href="http://adsabs.harvard.edu/abs/2016SPIE.9908E..6PH">A comprehensive radial velocity error budget for next generation Doppler spectrometers</a> Halverson et al. &#40;2016&#41;</p>
+</li>
+<li><p><a href="https://hpf.psu.edu/2019/02/19/the-hpf-astro-comb/">The HPF Astro-Comb &#40;blog post&#41;</a></p>
+</li>
+<li><p><a href="https://doi.org/10.1364/OPTICA.6.000233">Stellar spectroscopy in the near-infrared with a laser frequency comb</a> Metcalf et al. &#40;2019&#41;</p>
+</li>
+<li><p><a href="https://ui.adsabs.harvard.edu/abs/2021AJ....161...80Z/abstract">Excalibur: A Nonparametric, Hierarchical Wavelength Calibration Method for a Precision Spectrograph</a> Zhao et al. &#40;2021&#41;</p>
+</li>
+</ul>
+<h3 id="stellar_variability_activity_indicators"><a href="#stellar_variability_activity_indicators" class="header-anchor">Stellar Variability &amp; Activity Indicators</a></h3>
+<ul>
+<li><p><a href="https://ui.adsabs.harvard.edu/abs/2021arXiv210714291C/abstract">Extreme Precision Radial Velocity Working Group Final Report</a> Crass et al. &#40;2021&#41;, Appendix A.2</p>
+</li>
+<li><p><a href="https://catalog.libraries.psu.edu/catalog/29987866">The Doppler Method for the Detection of Exoplanets</a> Hatzes &#40;2019&#41;</p>
+</li>
+<li><p><a href="https://ui.adsabs.harvard.edu/abs/1997ApJ...485..319S/abstract">Activity-Related Radial Velocity Variation in Cool Stars</a> Saar &amp; Donahue &#40;1997&#41;</p>
+</li>
+<li><p><a href="https://neid.ipac.caltech.edu/docs/NEID-DRP/algorithms.html#stellar-activity-info">NEID DRP Manual</a> and references therein</p>
+</li>
+<li><p><a href="https://ui.adsabs.harvard.edu/abs/2018A&#37;26A...609A..12Z/abstract">Spectrum radial velocity analyser &#40;SERVAL&#41;. High-precision radial velocities and two alternative spectral indicators</a> Zechmeister et al. &#40;2018&#41;</p>
+</li>
+</ul>
+<h3 id="survey_design"><a href="#survey_design" class="header-anchor">Survey Design</a></h3>
+<ul>
+<li><p><a href="https://ui.adsabs.harvard.edu/abs/2021AJ....161..130G/abstract">Target Prioritization and Observing Strategies for the NEID Earth Twin Survey</a> Gupta et al. &#40;2021&#41;</p>
+</li>
+<li><p><a href="https://ui.adsabs.harvard.edu/abs/2023AJ....165...98L/abstract">Impact of Correlated Noise on the Mass Precision of Earth-analog Planets in Radial Velocity Surveys</a> Luhn et al. &#40;2023&#41;</p>
+</li>
+</ul>
+<h3 id="significance_of_exoplanet_detections"><a href="#significance_of_exoplanet_detections" class="header-anchor">Significance of Exoplanet Detections</a></h3>
+<ul>
+<li><p><a href="https://ui.adsabs.harvard.edu/abs/2023AnRSA..10..623H/abstract">Statistical Methods for Exoplanet Detection with Radial Velocities</a> Hara &amp; Ford &#40;2023&#41;</p>
+</li>
+<li><p><a href="https://ui.adsabs.harvard.edu/abs/2020AJ....159...73N/abstract">Quantifying the Bayesian Evidence for a Planet in Radial Velocity Data</a> Nelson et al. &#40;2020&#41;</p>
+</li>
+</ul>
+<h3 id="characterizing_exoplanet_masses_orbits"><a href="#characterizing_exoplanet_masses_orbits" class="header-anchor">Characterizing Exoplanet Masses &amp; Orbits</a></h3>
+<ul>
+<li><p><a href="https://ui.adsabs.harvard.edu/abs/2023AnRSA..10..623H/abstract">Statistical Methods for Exoplanet Detection with Radial Velocities</a> Hara &amp; Ford &#40;2023&#41;</p>
+</li>
+<li><p><a href="https://ui.adsabs.harvard.edu/abs/2005AJ....129.1706F/abstract">Quantifying the Uncertainty in the Orbits of Extrasolar Planets</a> Ford &#40;2005&#41;</p>
+</li>
+<li><p><a href="https://ui.adsabs.harvard.edu/abs/2014ApJS..210...11N/abstract">RUN DMC: An Efficient, Parallel Code for Analyzing Radial Velocity Observations Using N-body Integrations and Differential Evolution Markov Chain Monte Carlo</a> Nelson et al. &#40;2014&#41;</p>
+</li>
+</ul>
+<h3 id="rossiter-mclaughlin_effect"><a href="#rossiter-mclaughlin_effect" class="header-anchor">Rossiter-McLaughlin effect</a></h3>
+<ul>
+<li><p><a href="https://arxiv.org/abs/1709.06376">The Rossiter-McLaughlin effect in Exoplanet Research</a>  Chapter by Triaud in the &quot;Handbook of Exoplanets&quot;, ed. H. Deeg &amp; J.A. Belmonte</p>
+</li>
+</ul>
+<h3 id="machine_learning_stellar_variability"><a href="#machine_learning_stellar_variability" class="header-anchor">Machine Learning &amp; Stellar Variability</a></h3>
+<ul>
+<li><p><a href="https://ui.adsabs.harvard.edu/abs/2022AJ....163..171Z/abstract">The EXPRES Stellar Signals Project II. State of the Field in Disentangling Photospheric Velocities</a> Zhao et al. &#40;2022, see appendices&#41;</p>
+</li>
+</ul>
+<h3 id="sun-as-a-star_observations"><a href="#sun-as-a-star_observations" class="header-anchor">Sun-as-a-Star Observations</a></h3>
+<ul>
+<li><p><a href="https://ui.adsabs.harvard.edu/abs/2022AJ....163..184L/abstract">Observing the Sun as a Star: Design and Early Results from the NEID Solar Feed</a> Lin et al. &#40;2022&#41;</p>
+</li>
+<li><p><a href="https://ui.adsabs.harvard.edu/abs/2019MNRAS.487.1082C/abstract">Three years of Sun-as-a-star radial-velocity observations on the approach to solar minimum</a> Collier-Cameron et al. &#40;2019&#41;</p>
+</li>
+<li><p><a href="https://ui.adsabs.harvard.edu/abs/2024MNRAS.527.7681L/abstract">The magnetically quiet solar surface dominates HARPS-N solar RVs during low activity</a> Lakeland et al. &#40;2024&#41;</p>
+</li>
+<li><p><a href="https://ui.adsabs.harvard.edu/abs/2024MNRAS.531.4238K/abstract">Investigating stellar activity through eight years of Sun-as-a-star observations</a> Klein et al. &#40;2024&#41;</p>
+</li>
+<li><p><a href="https://ui.adsabs.harvard.edu/abs/2023AJ....166..173Z/abstract">The Extreme Stellar-signals Project. III. Combining Solar Data from HARPS, HARPS-N, EXPRES, and NEID</a> Zhao et al. &#40;2023&#41;</p>
+</li>
+</ul>
+<h2 id="website_tools"><a href="#website_tools" class="header-anchor">Website tools</a></h2>
+<ul>
+<li><p><a href="https://franklinjl.org/syntax/markdown/">Franklin.jl docs</a></p>
+</li>
+<li><p><a href="https://github.com/rikhuijzer/PlutoStaticHTML.jl">PlutoStaticHTML.jl</a></p>
+</li>
+<li><p><a href="https://plutojl.org/">Pluto</a></p>
+</li>
+<li><p><a href="https://julialang.org/">Julia</a></p>
+</li>
+</ul>
+<script type="text/javascript" src="/PsuAstro589Fall2024/libs/ansi_up.js" defer></script>
+
+<div id="copyright" class="docs-footer container grid-lg">
+<a href="https://www.psu.edu">Penn State</a> &mdash;
+<a href="https://science.psu.edu/astro">Astronomy & Astrophysics</a> &mdash;
+<a href="https://www.icds.psu.edu/">Institute for Computational & Data Sciences</a>
+</br>
+<a href="https://exoplanets.psu.edu/">Center for Exoplanets & Habitable Worlds</a> &mdash;
+<a href="https://astrostatistics.psu.edu/">Center for Astrostatistics</a>
+</br>
+</br>
+<a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> <a href="https://science.psu.edu/astro/people/ebf11">Eric Ford</a>
+</div>
+</div><!-- CONTENT ENDS HERE -->
+    </div>
+    </div>
+    </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,4 @@
+Sitemap: https://eford.github.io/PsuAstro589Fall2024/sitemap.xml
+
+User-agent: *
+Disallow:
