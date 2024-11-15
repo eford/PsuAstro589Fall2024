@@ -11,9 +11,9 @@
 |  9   | Oct 23 | EB        | EPRV Survey Design | [Crass et al. (2021)]((https://ui.adsabs.harvard.edu/abs/2021arXiv210714291C/abstract)), S 3-3.2.1, Table 3.3, S 4-4.2  |
 | 10   | Oct 30 | AP        | Significance of Exoplanet Detections | [Hara & Ford (2023)](https://ui.adsabs.harvard.edu/abs/2023AnRSA..10..623H/abstract), S4, App C & D | 
 | 11   | Nov 6  | GM        | Characterizing Masses & Orbits | [Ford (2005)](https://ui.adsabs.harvard.edu/abs/2005AJ....129.1706F/abstract): S 2-2.1, 4, Figs 2 & 4; [Nelson et al. (2014)](https://ui.adsabs.harvard.edu/abs/2014ApJS..210...11N/abstract): 4, 4.1 (skip 4.1.1-4.2), 4.2, (skip 4.2.1), Fig 2, Fig 4, S 6 | 
-| 12   | Nov 13 | GL        | Rossiter-McLaughlin Effect | TBD | 
-| 13   | Nov 20 | KP        | Mitigating Stellar Variability with ML | TBD | 
+| 12   | Nov 13 | GL        | Rossiter-McLaughlin Effect | [Gaudi & Winn(2018)](https://ui.adsabs.harvard.edu/abs/2007ApJ...655..550G/abstract), S 2 & 6 | 
+| 13   | Nov 20 | KP        | Mitigating Stellar Variability with ML | [de Beurs et al. (2022)](https://ui.adsabs.harvard.edu/abs/2022AJ....164...49D/abstract) S 5-5.2, Figs 1, 2, 5, 11, 12 | 
 |      | Nov 27 | ---       | Happy Thanksgiving | --- |  
-| 14   | Dec 4  | SJF       | Evaluating ML for EPRV | TBD | 
-| 15   | Dec 11 | EG        | Sun-as-a-Star Observations | TBD | 
+| 14   | Dec 4  | SJF       | Evaluating ML for EPRV | [Zhao et al. (2022)](https://ui.adsabs.harvard.edu/abs/2022AJ....163..171Z/abstract) S 3-5, Figs 4-6 | 
+| 15   | Dec 11 | EG        | Sun-as-a-Star Observations | [Lin et al. (2022)](https://ui.adsabs.harvard.edu/abs/2022AJ....163..184L/abstract) Sec 2.1, 2.2, 3.3?; [Ford et al. (2024)](https://ui.adsabs.harvard.edu/abs/2024arXiv240813318F/abstract) S 1 & 3 | 
 
