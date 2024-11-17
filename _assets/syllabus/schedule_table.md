@@ -15,5 +15,5 @@
 | 13   | Nov 20 | KP        | Mitigating Stellar Variability with ML | [de Beurs et al. (2022)](https://ui.adsabs.harvard.edu/abs/2022AJ....164...49D/abstract) S 5-5.2, Figs 1, 2, 5, 11, 12 | 
 |      | Nov 27 | ---       | Happy Thanksgiving | --- |  
 | 14   | Dec 4  | SJF       | Evaluating ML for EPRV | [Zhao et al. (2022)](https://ui.adsabs.harvard.edu/abs/2022AJ....163..171Z/abstract) S 3-5, Figs 4-6 | 
-| 15   | Dec 11 | EG        | Sun-as-a-Star Observations | [Lin et al. (2022)](https://ui.adsabs.harvard.edu/abs/2022AJ....163..184L/abstract) Sec 2.1, 2.2, 3.3?; [Ford et al. (2024)](https://ui.adsabs.harvard.edu/abs/2024arXiv240813318F/abstract) S 1 & 3 | 
+| 15   | Dec 11 | EG        | Sun-as-a-Star Observations | [Lin et al. (2022)](https://ui.adsabs.harvard.edu/abs/2022AJ....163..184L/abstract) Sec 2.1, 2.2, 3.3; [Ford et al. (2024)](https://ui.adsabs.harvard.edu/abs/2024arXiv240813318F/abstract) S 1 & 4 | 
 
