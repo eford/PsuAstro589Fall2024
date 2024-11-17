@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="/PsuAstro589Fall2024/assets/favicon.svg">
+  <script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ["\\(", "\\)"]],
+      processEscapes: true,
+    }
+  };
+</script>
+
+<!-- This weird alignment is required by Franklin's parser. -->
+<script
+    async
+    src="/PsuAstro589Fall2024/assets/MathJax/MathJax-3.2.2/es5/tex-mml-chtml.js">
+</script>
+
+<style>
+@font-face {
+  src: url("/PsuAstro589Fall2024//assets/MathJax/MathJax-3.2.2/es5/output/chtml/fonts/woff-v2/MathJax_Main-Regular.woff">
+}
+</style>
+
+<style>
+@font-face {
+  src: url("/PsuAstro589Fall2024//assets/MathJax/MathJax-3.2.2/es5/output/chtml/fonts/woff-v2/MathJax_Zero.woff">
+}
+</style>
+
+<style>
+@font-face {
+  src: url("/PsuAstro589Fall2024//assets/MathJax/MathJax-3.2.2/es5/output/chtml/fonts/woff-v2/MathJax_Math-Italic.woff">
+}
+</style>
+
+  <link rel="stylesheet"
+  href="/PsuAstro589Fall2024/assets/Highlight/cdn-release-11.5.0/build/styles/github.min.css">
+
+<script
+  src="/PsuAstro589Fall2024/assets/Highlight/cdn-release-11.5.0/build/highlight.min.js">
+</script>
+
+<script
+  src="/PsuAstro589Fall2024/assets/Highlight/cdn-release-11.5.0/build/languages/julia.min.js">
+</script>
+
+<script
+  src="/PsuAstro589Fall2024/assets/Highlight/cdn-release-11.5.0/build/languages/julia-repl.min.js">
+</script>
+
+<script>
+  hljs.configure({tabReplace: '    '});
+  hljs.highlightAll();
+</script>
+
+    <style>
+    @font-face {
+      font-family: JuliaMono-Regular;
+      src: url("/PsuAstro589Fall2024//assets/JuliaMono/juliamono-0.044/webfonts/JuliaMono-Regular.woff2");
+    }
+    </style>
+
+  <link rel="stylesheet" href="/PsuAstro589Fall2024/css/spectre.min.css">
+  <link rel="stylesheet" href="/PsuAstro589Fall2024/css/spectre-exp.min.css">
+  <link rel="stylesheet" href="/PsuAstro589Fall2024/css/spectre-icons.min.css">
+  <link rel="stylesheet" href="/PsuAstro589Fall2024/css/spectre-overrides.css">
+  <link rel="stylesheet" href="/PsuAstro589Fall2024/css/docs.min.css">
+
+  <title>Astro 589 (Fall 2024) - Extremely Precise Radial Velocity Surveys</title>
+  <meta name="description" content="Penn State Astro 598: EPRV Surveys">
+
+
+    
+
+</head>
+<body>
+
+  <div class="docs-container off-canvas off-canvas-sidebar-show">
+  <div class="docs-navbar">
+    <a class="off-canvas-toggle btn btn-link btn-action" href="#sidebar"><i class="icon icon-menu"></i></a>
+    <div class="btns d-flex">
+
+
+      <a class="btn btn-primary ml-1" href="https://github.com/eford/PsuAstro589Fall2024">Improve this site</a>
+
+    </div>
+</div>
+
+<div id="sidebar" class="docs-sidebar off-canvas-sidebar">
+
+<div class="docs-brand">
+    <h5><a href="/PsuAstro589Fall2024/">Astro 589</a></h5>
+</div>
+
+<div class="docs-nav">
+<div class="accordion-container">
+  <ul class="menu menu-nav">
+    <div class="menu-header"><a href="/PsuAstro589Fall2024/syllabus/">Syllabus</a></div>
+    
+    <li class='menu-item '><a href='/PsuAstro589Fall2024/syllabus/basics/'>Basic Info</a></li>
+    <li class='menu-item '><a href='/PsuAstro589Fall2024/syllabus/goals/'>Goals</a></li>
+    <li class='menu-item active'><a href='/PsuAstro589Fall2024/syllabus/schedule/'>Schedule</a></li>
+    <li class='menu-item '><a href='/PsuAstro589Fall2024/syllabus/assessment/'>Assessment</a></li>
+    <li class='menu-item '><a href='/PsuAstro589Fall2024/syllabus/reading/'>Reading Questions</a></li>
+    <li class='menu-item '><a href='/PsuAstro589Fall2024/syllabus/presentations/'>Presentions/Discussions</a></li>
+    <li class='menu-item '><a href='/PsuAstro589Fall2024/syllabus/academic_integrity/'>Academic Integrity</a></li>
+    <li class='menu-item '><a href='/PsuAstro589Fall2024/syllabus/additional_statements/'>Additional Statements</a></li>
+    
+<!---
+    <div class="menu-header"><a href="/PsuAstro589Fall2024/lessons/">Lessons</a></div>
+    {{ispage lessons/*}}
+    {{menuitem "lessons/week1"  "Week 1"   }}
+    {{menuitem "lessons/week2"  "Week 2"    }}
+    {{menuitem "lessons/week3"  "Week 3"    }}
+    {{menuitem "lessons/week4"  "Week 4"    }}
+    {{menuitem "lessons/week5"  "Week 5"    }}
+    {{menuitem "lessons/week6"  "Week 6"    }}
+    {{menuitem "lessons/week7"  "Week 7"    }}
+
+    {{menuitem "lessons/week8"  "Week 8"    }}
+    {{menuitem "lessons/week9"  "Week 9"    }}
+    {{menuitem "lessons/week10"  "Week 10"    }}
+    {{menuitem "lessons/week11"  "Week 11"    }}
+    {{menuitem "lessons/week12"  "Week 12"    }}
+    {{menuitem "lessons/week13"  "Week 13"    }}
+    {{menuitem "lessons/week14"  "Week 14"    }}
+    {{menuitem "lessons/week15"  "Week 15"    }}
+    {{menuitem "lessons/week16"  "Week 16"    }}
+    {{end}}
+  -->
+  <div class="menu-header"><a href="/PsuAstro589Fall2024/presentations/">Presentations/Discussions</a></div>
+  <div class="menu-header"><a href="/PsuAstro589Fall2024/resources/">Resources</a></div>
+  </ul>
+</div>
+</div>
+</div>
+<a class="off-canvas-overlay" href="#close"></a>
+
+
+
+
+
+<div class="off-canvas-content">
+<div id="content" class="docs-content">
+<div class="container">
+<!-- Content appended here -->
+<div class="franklin-content"><h2 id="course_content_structure"><a href="#course_content_structure" class="header-anchor">Course Content &amp; Structure</a></h2>
+<p>The instructor will lead discussions for the first few weeks.   Subsequently, students will lead discussions on a relevant topic, drawing from one to two sources agreed up on with the instructor, and with feedback provided by the instructor. <br/></p>
+<h3 id="schedule_of_topics"><a href="#schedule_of_topics" class="header-anchor">Schedule of Topics</a></h3>
+<table><tr><th align="right">Week</th><th align="right">Date</th><th align="right">Leader</th><th align="left">Topic</th><th align="left">Reading</th></tr><tr><td align="right">1</td><td align="right">Aug 28</td><td align="right">Ford</td><td align="left">Overview of Course &amp; What is EPRV?</td><td align="left"><a href="&#40;https://ui.adsabs.harvard.edu/abs/2021arXiv210714291C/abstract&#41;">Crass et al. &#40;2021&#41;</a>, Exec Summary</td></tr><tr><td align="right">2</td><td align="right">Sep 4</td><td align="right">Ford</td><td align="left">Intro to Precision RV Observations</td><td align="left"><a href="https://ui.adsabs.harvard.edu/abs/2023AnRSA..10..623H/abstract">Hara &amp; Ford &#40;2023&#41;</a>, S1-2.3</td></tr><tr><td align="right">3</td><td align="right">Sep 11</td><td align="right">Ford</td><td align="left">Intro to RV Extraction</td><td align="left"><a href="https://ui.adsabs.harvard.edu/abs/2023AnRSA..10..623H/abstract">Harra &amp; Ford &#40;2023&#41;</a>, S3</td></tr><tr><td align="right">4</td><td align="right">Sep 18</td><td align="right">Ford</td><td align="left">Intro to RV Analysis</td><td align="left"><a href="https://ui.adsabs.harvard.edu/abs/2023AnRSA..10..623H/abstract">Harra &amp; Ford &#40;2023&#41;</a>, S4-4.5</td></tr><tr><td align="right">5</td><td align="right">Sep 25</td><td align="right">HG</td><td align="left">EPRV Instruments</td><td align="left"><a href="https://ntrs.nasa.gov/api/citations/20180004146/downloads/20180004146.pdf">Schwab et al. &#40;2016&#41;</a></td></tr><tr><td align="right">6</td><td align="right">Oct 2</td><td align="right">CR</td><td align="left">EPRV Wavelength Calibration</td><td align="left"><a href="https://hpf.psu.edu/2019/02/19/the-hpf-astro-comb/">HPF blog</a>, <a href="https://doi.org/10.1364/OPTICA.6.000233">Metcalf et al. &#40;2019&#41;</a></td></tr><tr><td align="right">7</td><td align="right">Oct 9</td><td align="right">KS</td><td align="left">Stellar Variability: Magnetic Activity</td><td align="left"><a href="https://ui.adsabs.harvard.edu/abs/2010A&#37;26A...512A..39M/abstract">Meunier et al. &#40;2010&#41;</a>, S1, 3.1; <a href="https://ui.adsabs.harvard.edu/abs/2019A&#37;26A...632A..81M/abstract">Meunier et al. &#40;2019&#41;</a>, S5</td></tr><tr><td align="right">8</td><td align="right">Oct 16</td><td align="right">RZ</td><td align="left">Classical Activity Indicators</td><td align="left"><a href="https://ui.adsabs.harvard.edu/abs/2018A&#37;26A...609A..12Z/abstract">Zechmeister et al. &#40;2018&#41;</a>, S3.1-4.4; <a href="https://ui.adsabs.harvard.edu/abs/2021A&#37;26A...646A..77G/abstract">Gomes da Silva et al. &#40;2021&#41;</a>, Appendix A2</td></tr><tr><td align="right">9</td><td align="right">Oct 23</td><td align="right">EB</td><td align="left">EPRV Survey Design</td><td align="left"><a href="&#40;https://ui.adsabs.harvard.edu/abs/2021arXiv210714291C/abstract&#41;">Crass et al. &#40;2021&#41;</a>, S 3-3.2.1, Table 3.3, S 4-4.2</td></tr><tr><td align="right">10</td><td align="right">Oct 30</td><td align="right">AP</td><td align="left">Significance of Exoplanet Detections</td><td align="left"><a href="https://ui.adsabs.harvard.edu/abs/2023AnRSA..10..623H/abstract">Hara &amp; Ford &#40;2023&#41;</a>, S4, App C &amp; D</td></tr><tr><td align="right">11</td><td align="right">Nov 6</td><td align="right">GM</td><td align="left">Characterizing Masses &amp; Orbits</td><td align="left"><a href="https://ui.adsabs.harvard.edu/abs/2005AJ....129.1706F/abstract">Ford &#40;2005&#41;</a>: S 2-2.1, 4, Figs 2 &amp; 4; <a href="https://ui.adsabs.harvard.edu/abs/2014ApJS..210...11N/abstract">Nelson et al. &#40;2014&#41;</a>: 4, 4.1 &#40;skip 4.1.1-4.2&#41;, 4.2, &#40;skip 4.2.1&#41;, Fig 2, Fig 4, S 6</td></tr><tr><td align="right">12</td><td align="right">Nov 13</td><td align="right">GL</td><td align="left">Rossiter-McLaughlin Effect</td><td align="left"><a href="https://ui.adsabs.harvard.edu/abs/2007ApJ...655..550G/abstract">Gaudi &amp; Winn&#40;2018&#41;</a>, S 2 &amp; 6</td></tr><tr><td align="right">13</td><td align="right">Nov 20</td><td align="right">KP</td><td align="left">Mitigating Stellar Variability with ML</td><td align="left"><a href="https://ui.adsabs.harvard.edu/abs/2022AJ....164...49D/abstract">de Beurs et al. &#40;2022&#41;</a> S 5-5.2, Figs 1, 2, 5, 11, 12</td></tr><tr><td align="right"></td><td align="right">Nov 27</td><td align="right">–-</td><td align="left">Happy Thanksgiving</td><td align="left">–-</td></tr><tr><td align="right">14</td><td align="right">Dec 4</td><td align="right">SJF</td><td align="left">Evaluating ML for EPRV</td><td align="left"><a href="https://ui.adsabs.harvard.edu/abs/2022AJ....163..171Z/abstract">Zhao et al. &#40;2022&#41;</a> S 3-5, Figs 4-6</td></tr><tr><td align="right">15</td><td align="right">Dec 11</td><td align="right">EG</td><td align="left">Sun-as-a-Star Observations</td><td align="left"><a href="https://ui.adsabs.harvard.edu/abs/2022AJ....163..184L/abstract">Lin et al. &#40;2022&#41;</a> Sec 2.1, 2.2, 3.3; <a href="https://ui.adsabs.harvard.edu/abs/2024arXiv240813318F/abstract">Ford et al. &#40;2024&#41;</a> S 1 &amp; 4</td></tr></table>
+
+<p><br/> The schedule is subject to change. </p>
+<script type="text/javascript" src="/PsuAstro589Fall2024/libs/ansi_up.js" defer></script>
+
+<div id="copyright" class="docs-footer container grid-lg">
+<a href="https://www.psu.edu">Penn State</a> &mdash;
+<a href="https://science.psu.edu/astro">Astronomy & Astrophysics</a> &mdash;
+<a href="https://www.icds.psu.edu/">Institute for Computational & Data Sciences</a>
+</br>
+<a href="https://exoplanets.psu.edu/">Center for Exoplanets & Habitable Worlds</a> &mdash;
+<a href="https://astrostatistics.psu.edu/">Center for Astrostatistics</a>
+</br>
+</br>
+<a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> <a href="https://science.psu.edu/astro/people/ebf11">Eric Ford</a>
+</div>
+</div><!-- CONTENT ENDS HERE -->
+    </div>
+    </div>
+    </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="/PsuAstro589Fall2024/assets/favicon.svg">
+  <script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ["\\(", "\\)"]],
+      processEscapes: true,
+    }
+  };
+</script>
+
+<!-- This weird alignment is required by Franklin's parser. -->
+<script
+    async
+    src="/PsuAstro589Fall2024/assets/MathJax/MathJax-3.2.2/es5/tex-mml-chtml.js">
+</script>
+
+<style>
+@font-face {
+  src: url("/PsuAstro589Fall2024//assets/MathJax/MathJax-3.2.2/es5/output/chtml/fonts/woff-v2/MathJax_Main-Regular.woff">
+}
+</style>
+
+<style>
+@font-face {
+  src: url("/PsuAstro589Fall2024//assets/MathJax/MathJax-3.2.2/es5/output/chtml/fonts/woff-v2/MathJax_Zero.woff">
+}
+</style>
+
+<style>
+@font-face {
+  src: url("/PsuAstro589Fall2024//assets/MathJax/MathJax-3.2.2/es5/output/chtml/fonts/woff-v2/MathJax_Math-Italic.woff">
+}
+</style>
+
+  <link rel="stylesheet"
+  href="/PsuAstro589Fall2024/assets/Highlight/cdn-release-11.5.0/build/styles/github.min.css">
+
+<script
+  src="/PsuAstro589Fall2024/assets/Highlight/cdn-release-11.5.0/build/highlight.min.js">
+</script>
+
+<script
+  src="/PsuAstro589Fall2024/assets/Highlight/cdn-release-11.5.0/build/languages/julia.min.js">
+</script>
+
+<script
+  src="/PsuAstro589Fall2024/assets/Highlight/cdn-release-11.5.0/build/languages/julia-repl.min.js">
+</script>
+
+<script>
+  hljs.configure({tabReplace: '    '});
+  hljs.highlightAll();
+</script>
+
+    <style>
+    @font-face {
+      font-family: JuliaMono-Regular;
+      src: url("/PsuAstro589Fall2024//assets/JuliaMono/juliamono-0.044/webfonts/JuliaMono-Regular.woff2");
+    }
+    </style>
+
+  <link rel="stylesheet" href="/PsuAstro589Fall2024/css/spectre.min.css">
+  <link rel="stylesheet" href="/PsuAstro589Fall2024/css/spectre-exp.min.css">
+  <link rel="stylesheet" href="/PsuAstro589Fall2024/css/spectre-icons.min.css">
+  <link rel="stylesheet" href="/PsuAstro589Fall2024/css/spectre-overrides.css">
+  <link rel="stylesheet" href="/PsuAstro589Fall2024/css/docs.min.css">
+
+  <title>Astro 589 (Fall 2024) - Extremely Precise Radial Velocity Surveys</title>
+  <meta name="description" content="Penn State Astro 598: EPRV Surveys">
+
+
+    
+
+</head>
+<body>
+
+  <div class="docs-container off-canvas off-canvas-sidebar-show">
+  <div class="docs-navbar">
+    <a class="off-canvas-toggle btn btn-link btn-action" href="#sidebar"><i class="icon icon-menu"></i></a>
+    <div class="btns d-flex">
+
+
+      <a class="btn btn-primary ml-1" href="https://github.com/eford/PsuAstro589Fall2024">Improve this site</a>
+
+    </div>
+</div>
+
+<div id="sidebar" class="docs-sidebar off-canvas-sidebar">
+
+<div class="docs-brand">
+    <h5><a href="/PsuAstro589Fall2024/">Astro 589</a></h5>
+</div>
+
+<div class="docs-nav">
+<div class="accordion-container">
+  <ul class="menu menu-nav">
+    <div class="menu-header"><a href="/PsuAstro589Fall2024/syllabus/">Syllabus</a></div>
+    
+    <li class='menu-item '><a href='/PsuAstro589Fall2024/syllabus/basics/'>Basic Info</a></li>
+    <li class='menu-item '><a href='/PsuAstro589Fall2024/syllabus/goals/'>Goals</a></li>
+    <li class='menu-item '><a href='/PsuAstro589Fall2024/syllabus/schedule/'>Schedule</a></li>
+    <li class='menu-item '><a href='/PsuAstro589Fall2024/syllabus/assessment/'>Assessment</a></li>
+    <li class='menu-item '><a href='/PsuAstro589Fall2024/syllabus/reading/'>Reading Questions</a></li>
+    <li class='menu-item '><a href='/PsuAstro589Fall2024/syllabus/presentations/'>Presentions/Discussions</a></li>
+    <li class='menu-item '><a href='/PsuAstro589Fall2024/syllabus/academic_integrity/'>Academic Integrity</a></li>
+    <li class='menu-item '><a href='/PsuAstro589Fall2024/syllabus/additional_statements/'>Additional Statements</a></li>
+    
+<!---
+    <div class="menu-header"><a href="/PsuAstro589Fall2024/lessons/">Lessons</a></div>
+    {{ispage lessons/*}}
+    {{menuitem "lessons/week1"  "Week 1"   }}
+    {{menuitem "lessons/week2"  "Week 2"    }}
+    {{menuitem "lessons/week3"  "Week 3"    }}
+    {{menuitem "lessons/week4"  "Week 4"    }}
+    {{menuitem "lessons/week5"  "Week 5"    }}
+    {{menuitem "lessons/week6"  "Week 6"    }}
+    {{menuitem "lessons/week7"  "Week 7"    }}
+
+    {{menuitem "lessons/week8"  "Week 8"    }}
+    {{menuitem "lessons/week9"  "Week 9"    }}
+    {{menuitem "lessons/week10"  "Week 10"    }}
+    {{menuitem "lessons/week11"  "Week 11"    }}
+    {{menuitem "lessons/week12"  "Week 12"    }}
+    {{menuitem "lessons/week13"  "Week 13"    }}
+    {{menuitem "lessons/week14"  "Week 14"    }}
+    {{menuitem "lessons/week15"  "Week 15"    }}
+    {{menuitem "lessons/week16"  "Week 16"    }}
+    {{end}}
+  -->
+  <div class="menu-header"><a href="/PsuAstro589Fall2024/presentations/">Presentations/Discussions</a></div>
+  <div class="menu-header"><a href="/PsuAstro589Fall2024/resources/">Resources</a></div>
+  </ul>
+</div>
+</div>
+</div>
+<a class="off-canvas-overlay" href="#close"></a>
+
+
+
+
+
+<div class="off-canvas-content">
+<div id="content" class="docs-content">
+<div class="container">
+<!-- Content appended here -->
+<div class="franklin-content">
+<div class="h1">Seminar in Current Astronomical Research:</div>
+<div class="h2">Extremely Precise Radial Velocity Surveys</div>
+<h1 id="syllabus"><a href="#syllabus" class="header-anchor">Syllabus</a></h1>
+<p>&#40;version v1.0&#41;</p>
+<h2 id="basic_information"><a href="#basic_information" class="header-anchor">Basic Information</a></h2>
+<ul>
+<li><p>Course: Astro 589: Extremely Precise Radial Velocity Surveys </p>
+</li>
+<li><p>Semester: &#40;Fall 2024&#41;</p>
+</li>
+<li><p>Class Meetings: 10:10-11:00am Wednesdays</p>
+</li>
+<li><p>Location: Davey Lab 541</p>
+</li>
+<li><p>Instructor: Eric Ford</p>
+</li>
+<li><p>Email: ebf11 _at_ psu.edu</p>
+</li>
+<li><p>Phone: x3-5558</p>
+</li>
+<li><p>Office Hours: By appointment</p>
+</li>
+<li><p>Website: <a href="https://eford.github.io/PsuAstro589Fall2024/">https://eford.github.io/PsuAstro589Fall2024/</a></p>
+</li>
+</ul>
+
+<h2 id="course_overview"><a href="#course_overview" class="header-anchor">Course Overview</a></h2>
+<p>Students will learn about the current state-of-the-art of Extremely Precise Radial Velocity &#40;EPRV&#41; exoplanet surveys, including observational and data analysis techniques for detecting and characterizing extrasolar planetary systems.  </p>
+<h2 id="course_goals"><a href="#course_goals" class="header-anchor">Course Goals</a></h2>
+<p>Successful students in the class will:</p>
+<ul>
+<li><p>Understand how extremely precise radial velocity &#40;EPRV&#41; surveys detect and characterize extrasolar planetary systems,</p>
+</li>
+<li><p>Identify areas where the current state-of-the-art falls short of what is needed to detect and characterize Earth-analogs, and </p>
+</li>
+<li><p>Increase their skills for digesting journal articles and communicating advanced scientific concepts.</p>
+</li>
+</ul>
+<h2 id="learning_objectives"><a href="#learning_objectives" class="header-anchor">Learning Objectives</a></h2>
+<p>Successful students in the class will:</p>
+<ul>
+<li><p>Describe how EPRV surveys detect and characterize extrasolar planetary systems.</p>
+</li>
+<li><p>Explain the effects of exoplanets, astrophysical variability, and instrumental effects on EPRV observations.</p>
+</li>
+<li><p>Compare characteristics of EPRV exoplanet surveys being conducted by Penn State researchers and to those of other current/upcoming EPRV surveys. </p>
+</li>
+<li><p>Critically evaluate the quality of exoplanet detections and mass and orbit measurements.</p>
+</li>
+<li><p>Plan and lead effective in-class discussion&#40;s&#41; of topics relevant to EPRV surveys.</p>
+</li>
+</ul>
+
+<h2 id="expected_student_preparation"><a href="#expected_student_preparation" class="header-anchor">Expected Student Preparation</a></h2></p>
+<p>This class assumes that students have a strong knowledge of calculus, calculus-based mechanics, electricity and magnetism, and the fundamental techniques of optical astronomy.   In most cases, students will have completed or be enrolled in ASTRO 501 and ASTRO 502.   Any student who is interested in the class and will not have completed or be taking 501 &amp; 502, should consult with the instructor before starting the class.  
+<h2 id="course_content_structure"><a href="#course_content_structure" class="header-anchor">Course Content &amp; Structure</a></h2></p>
+<p>The instructor will lead discussions for the first few weeks.   Subsequently, students will lead discussions on a relevant topic, drawing from one to two sources agreed up on with the instructor, and with feedback provided by the instructor. <br/></p>
+<h3 id="schedule_of_topics"><a href="#schedule_of_topics" class="header-anchor">Schedule of Topics</a></h3>
+<table><tr><th align="right">Week</th><th align="right">Date</th><th align="right">Leader</th><th align="left">Topic</th><th align="left">Reading</th></tr><tr><td align="right">1</td><td align="right">Aug 28</td><td align="right">Ford</td><td align="left">Overview of Course &amp; What is EPRV?</td><td align="left"><a href="&#40;https://ui.adsabs.harvard.edu/abs/2021arXiv210714291C/abstract&#41;">Crass et al. &#40;2021&#41;</a>, Exec Summary</td></tr><tr><td align="right">2</td><td align="right">Sep 4</td><td align="right">Ford</td><td align="left">Intro to Precision RV Observations</td><td align="left"><a href="https://ui.adsabs.harvard.edu/abs/2023AnRSA..10..623H/abstract">Hara &amp; Ford &#40;2023&#41;</a>, S1-2.3</td></tr><tr><td align="right">3</td><td align="right">Sep 11</td><td align="right">Ford</td><td align="left">Intro to RV Extraction</td><td align="left"><a href="https://ui.adsabs.harvard.edu/abs/2023AnRSA..10..623H/abstract">Harra &amp; Ford &#40;2023&#41;</a>, S3</td></tr><tr><td align="right">4</td><td align="right">Sep 18</td><td align="right">Ford</td><td align="left">Intro to RV Analysis</td><td align="left"><a href="https://ui.adsabs.harvard.edu/abs/2023AnRSA..10..623H/abstract">Harra &amp; Ford &#40;2023&#41;</a>, S4-4.5</td></tr><tr><td align="right">5</td><td align="right">Sep 25</td><td align="right">HG</td><td align="left">EPRV Instruments</td><td align="left"><a href="https://ntrs.nasa.gov/api/citations/20180004146/downloads/20180004146.pdf">Schwab et al. &#40;2016&#41;</a></td></tr><tr><td align="right">6</td><td align="right">Oct 2</td><td align="right">CR</td><td align="left">EPRV Wavelength Calibration</td><td align="left"><a href="https://hpf.psu.edu/2019/02/19/the-hpf-astro-comb/">HPF blog</a>, <a href="https://doi.org/10.1364/OPTICA.6.000233">Metcalf et al. &#40;2019&#41;</a></td></tr><tr><td align="right">7</td><td align="right">Oct 9</td><td align="right">KS</td><td align="left">Stellar Variability: Magnetic Activity</td><td align="left"><a href="https://ui.adsabs.harvard.edu/abs/2010A&#37;26A...512A..39M/abstract">Meunier et al. &#40;2010&#41;</a>, S1, 3.1; <a href="https://ui.adsabs.harvard.edu/abs/2019A&#37;26A...632A..81M/abstract">Meunier et al. &#40;2019&#41;</a>, S5</td></tr><tr><td align="right">8</td><td align="right">Oct 16</td><td align="right">RZ</td><td align="left">Classical Activity Indicators</td><td align="left"><a href="https://ui.adsabs.harvard.edu/abs/2018A&#37;26A...609A..12Z/abstract">Zechmeister et al. &#40;2018&#41;</a>, S3.1-4.4; <a href="https://ui.adsabs.harvard.edu/abs/2021A&#37;26A...646A..77G/abstract">Gomes da Silva et al. &#40;2021&#41;</a>, Appendix A2</td></tr><tr><td align="right">9</td><td align="right">Oct 23</td><td align="right">EB</td><td align="left">EPRV Survey Design</td><td align="left"><a href="&#40;https://ui.adsabs.harvard.edu/abs/2021arXiv210714291C/abstract&#41;">Crass et al. &#40;2021&#41;</a>, S 3-3.2.1, Table 3.3, S 4-4.2</td></tr><tr><td align="right">10</td><td align="right">Oct 30</td><td align="right">AP</td><td align="left">Significance of Exoplanet Detections</td><td align="left"><a href="https://ui.adsabs.harvard.edu/abs/2023AnRSA..10..623H/abstract">Hara &amp; Ford &#40;2023&#41;</a>, S4, App C &amp; D</td></tr><tr><td align="right">11</td><td align="right">Nov 6</td><td align="right">GM</td><td align="left">Characterizing Masses &amp; Orbits</td><td align="left"><a href="https://ui.adsabs.harvard.edu/abs/2005AJ....129.1706F/abstract">Ford &#40;2005&#41;</a>: S 2-2.1, 4, Figs 2 &amp; 4; <a href="https://ui.adsabs.harvard.edu/abs/2014ApJS..210...11N/abstract">Nelson et al. &#40;2014&#41;</a>: 4, 4.1 &#40;skip 4.1.1-4.2&#41;, 4.2, &#40;skip 4.2.1&#41;, Fig 2, Fig 4, S 6</td></tr><tr><td align="right">12</td><td align="right">Nov 13</td><td align="right">GL</td><td align="left">Rossiter-McLaughlin Effect</td><td align="left"><a href="https://ui.adsabs.harvard.edu/abs/2007ApJ...655..550G/abstract">Gaudi &amp; Winn&#40;2018&#41;</a>, S 2 &amp; 6</td></tr><tr><td align="right">13</td><td align="right">Nov 20</td><td align="right">KP</td><td align="left">Mitigating Stellar Variability with ML</td><td align="left"><a href="https://ui.adsabs.harvard.edu/abs/2022AJ....164...49D/abstract">de Beurs et al. &#40;2022&#41;</a> S 5-5.2, Figs 1, 2, 5, 11, 12</td></tr><tr><td align="right"></td><td align="right">Nov 27</td><td align="right">–-</td><td align="left">Happy Thanksgiving</td><td align="left">–-</td></tr><tr><td align="right">14</td><td align="right">Dec 4</td><td align="right">SJF</td><td align="left">Evaluating ML for EPRV</td><td align="left"><a href="https://ui.adsabs.harvard.edu/abs/2022AJ....163..171Z/abstract">Zhao et al. &#40;2022&#41;</a> S 3-5, Figs 4-6</td></tr><tr><td align="right">15</td><td align="right">Dec 11</td><td align="right">EG</td><td align="left">Sun-as-a-Star Observations</td><td align="left"><a href="https://ui.adsabs.harvard.edu/abs/2022AJ....163..184L/abstract">Lin et al. &#40;2022&#41;</a> Sec 2.1, 2.2, 3.3; <a href="https://ui.adsabs.harvard.edu/abs/2024arXiv240813318F/abstract">Ford et al. &#40;2024&#41;</a> S 1 &amp; 4</td></tr></table>
+
+<p><br/> The schedule is subject to change. 
+<h2 id="required_course_materials"><a href="#required_course_materials" class="header-anchor">Required Course Materials</a></h2></p>
+<p>There is not textbooks for this seminar. Links to readings and other online resources will be provided via the course website and/or the Canvas/Perusal.   Multiple early classes will draw from sections of  a recent review article, <a href="https://ui.adsabs.harvard.edu/abs/2023AnRSA..10..623H/abstract">Statistical Methods for Exoplanet Detection with Radial Velocities</a> &#40;Hara &amp; Ford 2023&#41;, and  the <a href="https://ui.adsabs.harvard.edu/abs/2021arXiv210714291C/abstract">NSF/NASA Extreme Precision Radial Velocity Working Group Final Report</a> &#40;Crass et al. 2021&#41;.  A version of these and most readings will be freely avaliable online.  However, some assigned readings may be in journals that require logging in with your Penn State account to access. <br/></p>
+<p>Whenever practical, students are encouraged to read, comment, and ask questions via Perusall &#40;following link from within course webpage in Canvas&#41;.   Therefore, students will also need a computer, modern web browser and high-speed internet access, so students can submit reading questions and comments &#40;and perhaps effectively participate in any classes that get moved to Zoom&#41;. If you&#39;re traveling some weeks and find it&#39;s easier to read offline or a print version, then you may submit questions via email &#40;with Astro 589 in subject line; to both the instructor and the week&#39;s discussion leader&#41;.  
+<h2 id="assessment_and_grading_policy"><a href="#assessment_and_grading_policy" class="header-anchor">Assessment and Grading Policy</a></h2>
+<p>Assessment will be in two categories:</p>
+<ul>
+<li><p>Class participation: 40&#37; </p>
+<ul>
+<li><p>Reading questions &amp; comments</p>
+</li>
+<li><p>In-class participation</p>
+</li>
+</ul>
+</li>
+<li><p>Student-led Presentation &amp; Discussion:  60&#37;</p>
+<ul>
+<li><p>Preparation:  20&#37;</p>
+</li>
+<li><p>Prepared materials: 20&#37;</p>
+</li>
+<li><p>Effective &amp; engaging discussion: 20&#37;</p>
+</li>
+</ul>
+</li>
+</ul>
+
+<h3 id="readings_reading_questionscomments"><a href="#readings_reading_questionscomments" class="header-anchor">Readings &amp; Reading Questions/Comments</a></h3></p>
+<p>Students will be expected to read assignments related to each class 24 hours before class stars, so they are prepared to participate in class discussions and discussion leader has time to review their comments and questions.   Any students who are reluctant to ask questions in class are especially encouraged to submit extra reading comments/questions prior to class.   Each student&#39;s three lowest reading scores will be dropped, no questions asked, so as to avoid having to provide documentation for the vast majority of illnesses, religous holidays, and life challenges. Any students absent due to an extended illness can still earn full credit for reading questions and class participation for the classes that they need to miss by submitting particularly thoughtful reading questions and comments. <br/></p>
+<p>Perusal assigns reading grades based on an algorithm that includes several factors:  number, length, timeliness, and it&#39;s perception of quality of posts, opening the assignment in Perusal, reading the entire document in Perusal, time spent engaging with reading in Perusal, extent to which comments elicit responses from other students, and upvoting of other student&#39;s comments.   We&#39;ll start with their algorithm, but the instructor may make adjustments to the grading system based on their evaluation of how well it is working.   The instructor may override Perusal&#39;s suggested grades to assign students higher scores when deemed appropriate.
+<h3 id="student-led_presentation_discussion"><a href="#student-led_presentation_discussion" class="header-anchor">Student-led Presentation &amp; Discussion</a></h3></p>
+<p>The instructor will lead the discussion for the first few weeks.  For future classes one or two students will be assigned to organize and lead the discussion.  During the first week of class, students should select at least three topics that they are interested in presenting and may indicate any dates that they would like to avoid presenting &#40;e.g., travel for research, near another important deadline&#41;.   The instructor will synthesize these inputs and announce the assigned topics and dates during the second week of class. Each student should allocate 15 hours to prepare for the discussion they lead, including thoughtful reading of the assigned reading, reading related sources to gain background knowledge an context, outlining their discussion plans, updating their plans based on instructor feedback, preparing materials to support the discussion they lead, planning questions or activities to stimulate constructive discussions, updating prepared materials and questions based on instructor feedback, reading questions/comments from other students via Perusal, and updating their plans based on student comments. <br/></p>
+<p><strong>At least three weeks before their presentation/discussion:</strong>   Student&#40;s&#41; should propose one to three articles that could provide the foundation for their presentation and subsequent discussion.   In the proposal, students should identify what sections of the article&#40;s&#41; they propose assigning prior to class and what sections they propose recommending for reading after class.   The total time required for reading assigned before class and recommended for after class should not exceed one hour.   The instructor may suggest removing or replacing sources, request adding/removing sections assigned, and may require adding one one article of their choosing within one week of receiving a proposal. Provide a link to a PDF version of any readings that can be freely redistributed &#40;e.g., from arXiv&#41; whenever practical, so the instructor can upload it to Perusal. <br/></p>
+<p><strong>At least two week before their presentation/discussion:</strong>  Once the primary sources are agreed upon, the student&#40;s&#41; should read the article&#40;s&#41; thoughtfully, prepare an outline for their prepared in-class presentation and intended discussion points, and submit the outline to the instructor.    Submissions may be simple ASCII text, a link to a collaborative document &#40;e.g., Google Doc, Overleaf document&#41;, or a PDF.   A typical outline would include: &#40;1&#41; plan for prepared materials &#40;aim for approximately 15 minutes&#41; that could include background or context &#40;e.g., material from sections not included in the assigned reading&#41; or an explanation of any particularly important concepts/methods/results/figures; and &#40;2&#41; potential questions and/or other prompts/active learning exercises designed to simulate constructive discussion via Perusal and/or during class.   There is an example outline in the <a href="https://drive.google.com/drive/folders/1H5mFzBSMISdLx6HjuDVBP72CShdfZk6T?usp&#61;sharing">shared google drive folder</a> &#40;link valid for PSU students only&#41;.  Students are encouraged to schedule a time to meet with the instructor after they have had a chance to begin thinking about how to incoporate any feedback and building their presentation materials, so they can ask any questions about their presentation/discussion topics. <br/></p>
+<p><strong>Roughly one week before their presentation/discussion &#40;and no later than 9am on the Monday prior to class&#41;:</strong>   Students should submit draft presentation materials via Canvas.  A link to a collaborative document is encouraged, as that facilitates suggestions and replies.  A PDF is also acceptable.    Any presentation prepared in a format that requires special software &#40;e.g., Mac-specific formats&#41; will have to be converted to PDF &#40;or something else that the instructor can easily open&#41;.   Students are also encouraged to add some questions/comments to the assigned reading in Perusal to help jump start discussion among other students. <br/></p>
+<p>The above deadlines may be relaxed slightly for the first two student-led discussions, depending on the number of students enrolled and the date of the first student-led discussion. <br/></p>
+<p><strong>During the 24 hours prior to the start of the class with their presentation/discussion,</strong> students should review the questions, comments, discussion, and upvotes recorded by students on Perusal.  &#40;If it&#39;s not practical to use Perusal for some article due to copyright issues, then students can collect questions/comments via email instead.&#41;  Then students should consider updating their plans for discussion based on that feedback.  &#40;It&#39;s understandable that graphics added in responce to a question received on Tuesday will not be as polished as those that students started preparing about well in advance.&#41;
+<h2 id="academic_integrity"><a href="#academic_integrity" class="header-anchor">Academic Integrity</a></h2></p>
+<p>In all assignments submitted and when presenting or leading discussions, all ideas and work derived from resources beyond class notes must properly acknowledge or reference sources, including any use of <a href="https://aiai.psu.edu/">artificial intelligence</a>. <br/></p>
+<p>Academic integrity is the pursuit of scholarly activity in an open, honest and responsible manner. Academic integrity is a basic guiding principle for all academic activity at The Pennsylvania State University, and all members of the University community are expected to act in accordance with this principle. Consistent with this expectation, the University’s Code of Conduct states that all students should act with personal integrity, respect other students’ dignity, rights and property, and help create and maintain an environment in which all can succeed through the fruits of their efforts.</p>
+<p>Academic integrity includes a commitment by all members of the University community not to engage in or tolerate acts of falsification, misrepresentation or deception. Such acts of dishonesty violate the fundamental ethical principles of the University community and compromise the worth of work completed by others.</p>
+<p>All <a href="https://academicintegrity.psu.edu/">Penn State</a>, <a href="https://gradschool.psu.edu/graduate-education-policies/">Graduate School</a>, and <a href="https://science.psu.edu/current-students/advising-and-student-services/integrity">Eberly College of Science</a> policies regarding academic integrity, ethics and honorable behavior apply to this course. <br/>
+<h2 id="safety"><a href="#safety" class="header-anchor">Safety</a></h2></p>
+<p>While attendance and participation in class is important to the class and your learning, it is more important that we all stay safe and healthy.   Any student who does not feel well or who may be contagious must not attend class in Davey Lab.   If you are staying away from others due to health concerns, then you should let the instruction know in advance of class whenever practical and make plans to get a classmate’s notes for any missed class sessions.   Some class sessions may be moved online, based on community conditions or if the instructor or that week&#39;s presenter needs to quarantine or isolate.   If you are scheduled to present and are unsure if you&#39;ll be recovered in time to present in person, then please let the instructor know as soon as possible, so we can make alternative plans, such as rescheduling or a remote presentation. <br/></p>
+<p>All students are required to follow all relevant protocols required or recommended university and government policies in regards to COVID, flu and other infectious illnesses.  University policies and recommendations are subject to change during the semester.  Current recommendations can be accessed at <a href="https://studentaffairs.psu.edu/covidsupport">https://studentaffairs.psu.edu/covidsupport</a>. <br/></p>
+<h2 id="recordings_of_classes"><a href="#recordings_of_classes" class="header-anchor">Recordings of classes</a></h2>
+<p>Some classes may be recorded. Ay students who prefer to not ask questions while being recorded are encouraged to submit questions in advance of class.</p>
+<p>Video and audio recordings of classes are part of the class activities. Any video and audio recordings are used for educational use/purposes and only may be made available to all students presently enrolled in the class. For purposes where the recordings will be used in future class sessions/lectures beyond this class, any type of identifying information will be adequately removed.</p>
+<p>According to <a href="https://policy.psu.edu/policies/ad40">University Policy</a>, students must get express permission from their instructor to record class sessions. Screenshots showing instructors and students are considered recordings. Even if permission is granted, student-initiated recordings must be used only for educational purposes for the students enrolled in the initiating student’s class. Recordings may be used only during the period in which the student is enrolled in the class. Authorized student-initiated recordings may not be posted or shared in any fashion outside of the class, including online or through other media, without the express written consent of the course instructor or appropriate University administrator. Students who engage in the unauthorized distribution of class recordings may be held in violation of the University’s Code of Conduct, and/or liable under Federal and State laws.</p>
+<h2 id="instructions_for_a_campus_closure_or_other_adjustment"><a href="#instructions_for_a_campus_closure_or_other_adjustment" class="header-anchor">Instructions for a campus closure or other adjustment</a></h2>
+<p>In the event of any changes to the schedule &#40;e.g., due to a campus closure or delayed start, instructor illness, etc.&#41;, any changes in class meeting times, class format &#40;in-person or Zoom&#41;, assignment deadlines, submission procedures, exam procedures, or any other necessary instructions will be communicated via an announcement in Canvas.  Students should make a habit of checking their Canvas inbox at least daily.  </p>
+<h2 id="code_of_mutual_respect_and_cooperation"><a href="#code_of_mutual_respect_and_cooperation" class="header-anchor">Code of Mutual Respect and Cooperation</a></h2>
+<p>The Eberly College of Science <a href="https://science.psu.edu/climate-and-diversity/code-mutual-respect-and-cooperation">Code of Mutual Respect and Cooperation</a> embodies the values that we hope our faculty, staff, and students possess and will endorse to make The Eberly College of Science a place where every individual feels respected and valued, as well as challenged and rewarded. Please visit the link to review the 12 points that comprise this code.</p>
+<h2 id="academic_success"><a href="#academic_success" class="header-anchor">Academic Success</a></h2>
+<p>The Eberly College of Science is committed to the academic success of students enrolled in the College&#39;s courses and undergraduate programs. When in need of help, students can utilize various College and University wide resources for learning assistance. <a href=" https://science.psu.edu/current-students/advising-and-student-services/academic-support-services"> https://science.psu.edu/current-students/advising-and-student-services/academic-support-services</a>.</p>
+<h2 id="disability_accommodation_statement"><a href="#disability_accommodation_statement" class="header-anchor">Disability Accommodation Statement</a></h2>
+<p>Penn State welcomes students with disabilities into the University’s educational programs. Every Penn State campus has an office for students with disabilities. Student Disability Resources &#40;SDR&#41; website provides contact information for every Penn State campus &#40;<a href="https://equity.psu.edu/offices/student-disability-resources/campus-offices">https://equity.psu.edu/offices/student-disability-resources/campus-offices</a>&#41;. For further information, please visit Student Disability Resources &#40;<a href="https://equity.psu.edu/offices/student-disability-resources">https://equity.psu.edu/offices/student-disability-resources</a>&#41;.</p>
+<p>In order to receive consideration for reasonable accommodations, you must contact the appropriate disability services office at the campus where you are officially enrolled, participate in an intake interview, and provide documentation: See documentation guidelines &#40;<a href="http://equity.psu.edu/sdr/guidelines">http://equity.psu.edu/sdr/guidelines</a>&#41;. If the documentation supports your request for reasonable accommodations, your campus disability services office will provide you with an accommodation letter. Please share this letter with your instructors and discuss the accommodations with them as early as possible. You must follow this process for every semester that you request accommodations.</p>
+<h2 id="counseling_psychological_services_statement"><a href="#counseling_psychological_services_statement" class="header-anchor">Counseling &amp; Psychological Services Statement</a></h2>
+<p>Many students at Penn State face personal challenges or have psychological needs that may interfere with their academic progress, social development, or emotional wellbeing. The university offers a variety of confidential services to help you through difficult times, including individual and group counseling, crisis intervention, consultations, online chats, and mental health screenings. These services are provided by staff who welcome all students and embrace a philosophy respectful of clients’ cultural and religious backgrounds, and sensitive to differences in race, ability, gender identity and sexual orientation.</p>
+<ul>
+<li><p>Counseling and Psychological Services at University Park &#40;CAPS&#41;: <a href="http://studentaffairs.psu.edu/counseling/">http://studentaffairs.psu.edu/counseling/</a>, 814-863-0395</p>
+</li>
+<li><p>Penn State Crisis Line &#40;24 hours/7 days/week&#41;: 877-229-6400</p>
+</li>
+<li><p>Crisis Text Line &#40;24 hours/7 days/week&#41;: Text LIONS to 741741</p>
+</li>
+</ul>
+<h2 id="reporting_educational_equity_concerns"><a href="#reporting_educational_equity_concerns" class="header-anchor">Reporting Educational Equity Concerns</a></h2>
+<p>Penn State takes great pride to foster a diverse and inclusive environment for students, faculty, and staff. Acts of intolerance, discrimination, or harassment due to age, ancestry, color, disability, gender, gender identity, national origin, race, religious belief, sexual orientation, or veteran status are not tolerated and can be reported through Educational Equity via the Report Bias webpage &#40;<a href="http://equity.psu.edu/reportbias/">http://equity.psu.edu/reportbias/</a>&#41;.
+<script type="text/javascript" src="/PsuAstro589Fall2024/libs/ansi_up.js" defer></script>
+
+<div id="copyright" class="docs-footer container grid-lg">
+<a href="https://www.psu.edu">Penn State</a> &mdash;
+<a href="https://science.psu.edu/astro">Astronomy & Astrophysics</a> &mdash;
+<a href="https://www.icds.psu.edu/">Institute for Computational & Data Sciences</a>
+</br>
+<a href="https://exoplanets.psu.edu/">Center for Exoplanets & Habitable Worlds</a> &mdash;
+<a href="https://astrostatistics.psu.edu/">Center for Astrostatistics</a>
+</br>
+</br>
+<a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> <a href="https://science.psu.edu/astro/people/ebf11">Eric Ford</a>
+</div>
+</div><!-- CONTENT ENDS HERE -->
+    </div>
+    </div>
+    </div>
+    </div>
+  </body>
+</html>
